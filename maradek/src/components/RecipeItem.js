@@ -79,7 +79,7 @@ const RecipeItem = ({ favouriteHandler, savedItems }) => {
                 <BsClock />
                 Elkészítési idő :{" "}
                 {recipe?.cooking_time < 60
-                  ? String(recipe?.cooking_time) + "min"
+                  ? String(recipe?.cooking_time) + "perc"
                   : durationCalc(recipe?.cooking_time / 60)}
               </div>
             </div>
@@ -93,8 +93,8 @@ const RecipeItem = ({ favouriteHandler, savedItems }) => {
                 }`}
               >
                 {itemsSavedStatus
-                  ? "- Remove From Favourites"
-                  : "+ Save As Favourites"}
+                  ? "- Elvávolítás a Kedvencekből"
+                  : "+ Kedvencekhez adás"}
               </button>
 
               <Link

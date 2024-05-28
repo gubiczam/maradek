@@ -24,7 +24,7 @@ const Navbar = ({
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           type="search"
-          placeholder="Search recipe..."
+          placeholder="Keress egy receptet..."
           required
           className="bg-white/75 p-3 px-8 lg:w-96 rounded-full outline-none shadow-lg shadow-rose-100 focus:shadow-rose-200 duration-300"
         />
